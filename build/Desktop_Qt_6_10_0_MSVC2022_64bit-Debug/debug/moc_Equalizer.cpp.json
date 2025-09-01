@@ -1,0 +1,80 @@
+{
+    "classes": [
+        {
+            "className": "VlcEqualizer",
+            "lineNumber": 37,
+            "object": true,
+            "qualifiedClassName": "VlcEqualizer",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "presetLoaded",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "uint"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "loadFromPreset",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "amp",
+                            "type": "float"
+                        },
+                        {
+                            "name": "bandIndex",
+                            "type": "uint"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "setAmplificationForBandAt",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "enabled",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "setEnabled",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "value",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "setPreamplification",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "Equalizer.h",
+    "outputRevision": 69
+}

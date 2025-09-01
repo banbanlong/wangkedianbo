@@ -1,0 +1,280 @@
+{
+    "classes": [
+        {
+            "className": "VlcMediaPlayer",
+            "lineNumber": 51,
+            "object": true,
+            "qualifiedClassName": "VlcMediaPlayer",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "backward",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "buffer",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "buffering",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "buffer",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "buffering",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "end",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "error",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "forward",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "length",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "lengthChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "media",
+                            "type": "libvlc_media_t*"
+                        }
+                    ],
+                    "index": 7,
+                    "name": "mediaChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 8,
+                    "name": "nothingSpecial",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 9,
+                    "name": "opening",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "pausable",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 10,
+                    "name": "pausableChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 11,
+                    "name": "paused",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 12,
+                    "name": "playing",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "position",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 13,
+                    "name": "positionChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "seekable",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 14,
+                    "name": "seekableChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "filename",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 15,
+                    "name": "snapshotTaken",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 16,
+                    "name": "stopped",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "time",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 17,
+                    "name": "timeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 18,
+                    "name": "titleChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "count",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 19,
+                    "name": "vout",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 20,
+                    "name": "stateChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "time",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 21,
+                    "name": "setTime",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "pos",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 22,
+                    "name": "setPosition",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "rate",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 23,
+                    "name": "setPlaybackRate",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 24,
+                    "name": "play",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 25,
+                    "name": "pause",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 26,
+                    "name": "togglePause",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 27,
+                    "name": "resume",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 28,
+                    "name": "stop",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "MediaPlayer.h",
+    "outputRevision": 69
+}

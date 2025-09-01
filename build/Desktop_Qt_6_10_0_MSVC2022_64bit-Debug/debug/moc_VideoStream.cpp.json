@@ -1,0 +1,30 @@
+{
+    "classes": [
+        {
+            "className": "VlcVideoStream",
+            "lineNumber": 50,
+            "methods": [
+                {
+                    "access": "private",
+                    "index": 0,
+                    "name": "frameUpdated",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "VlcVideoStream",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                },
+                {
+                    "access": "public",
+                    "name": "VlcAbstractVideoStream"
+                }
+            ]
+        }
+    ],
+    "inputFile": "VideoStream.h",
+    "outputRevision": 69
+}

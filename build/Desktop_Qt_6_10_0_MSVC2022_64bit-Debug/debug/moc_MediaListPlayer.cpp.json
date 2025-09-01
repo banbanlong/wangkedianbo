@@ -1,0 +1,94 @@
+{
+    "classes": [
+        {
+            "className": "VlcMediaListPlayer",
+            "lineNumber": 47,
+            "object": true,
+            "qualifiedClassName": "VlcMediaListPlayer",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "played",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "media",
+                            "type": "VlcMedia*"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "nextItemSet",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "media",
+                            "type": "libvlc_media_t*"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "nextItemSet",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "stopped",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "itemAt",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "next",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 6,
+                    "name": "play",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "name": "previous",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 8,
+                    "name": "stop",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "MediaListPlayer.h",
+    "outputRevision": 69
+}

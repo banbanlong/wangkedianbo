@@ -1,0 +1,24 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                }
+            ],
+            "className": "ENetwork",
+            "lineNumber": 6,
+            "object": true,
+            "qualifiedClassName": "ENetwork",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "enetwork.h",
+    "outputRevision": 69
+}

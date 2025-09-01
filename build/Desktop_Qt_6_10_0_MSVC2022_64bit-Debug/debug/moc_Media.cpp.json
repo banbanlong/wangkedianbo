@@ -1,0 +1,104 @@
+{
+    "classes": [
+        {
+            "className": "VlcMedia",
+            "lineNumber": 46,
+            "object": true,
+            "qualifiedClassName": "VlcMedia",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "meta",
+                            "type": "Vlc::Meta"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "metaChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "subitem",
+                            "type": "libvlc_media_t*"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "subitemAdded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "duration",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "durationChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "status",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "parsedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "status",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "parsedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "media",
+                            "type": "libvlc_media_t*"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "freed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "state",
+                            "type": "Vlc::State"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "stateChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "Media.h",
+    "outputRevision": 69
+}

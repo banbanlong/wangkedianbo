@@ -1,0 +1,42 @@
+{
+    "classes": [
+        {
+            "className": "VlcTrackModel",
+            "lineNumber": 35,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "count",
+                    "notify": "countChanged",
+                    "read": "count",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "VlcTrackModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "countChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractListModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "TrackModel.h",
+    "outputRevision": 69
+}

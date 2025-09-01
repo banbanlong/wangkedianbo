@@ -1,0 +1,114 @@
+{
+    "classes": [
+        {
+            "className": "VlcAudio",
+            "lineNumber": 41,
+            "object": true,
+            "qualifiedClassName": "VlcAudio",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "volume",
+                            "type": "float"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "volumeChangedF",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "volume",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "volumeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mute",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "muteChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "volume",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "setVolume",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "track",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "setTrack",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "isConst": true,
+                    "name": "toggleMute",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "channel",
+                            "type": "Vlc::AudioChannel"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "setChannel",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "mute",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 7,
+                    "isConst": true,
+                    "name": "setMute",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "Audio.h",
+    "outputRevision": 69
+}

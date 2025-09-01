@@ -1,0 +1,12 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/ENetClassClient">
+<file alias="main.qml">C:/Users/banchenglong/Desktop/qt/ENetClassClient/main.qml</file>
+<file alias="ESplashScreen.qml">C:/Users/banchenglong/Desktop/qt/ENetClassClient/ESplashScreen.qml</file>
+<file alias="ELoginWindow.qml">C:/Users/banchenglong/Desktop/qt/ENetClassClient/ELoginWindow.qml</file>
+<file alias="ELoginButton.qml">C:/Users/banchenglong/Desktop/qt/ENetClassClient/ELoginButton.qml</file>
+<file alias="EPlayerWindow.qml">C:/Users/banchenglong/Desktop/qt/ENetClassClient/EPlayerWindow.qml</file>
+<file alias="ETitlebar.qml">C:/Users/banchenglong/Desktop/qt/ENetClassClient/ETitlebar.qml</file>
+<file alias="EHandset.qml">C:/Users/banchenglong/Desktop/qt/ENetClassClient/EHandset.qml</file>
+<file alias="ELessionList.qml">C:/Users/banchenglong/Desktop/qt/ENetClassClient/ELessionList.qml</file>
+</qresource>
+</RCC>

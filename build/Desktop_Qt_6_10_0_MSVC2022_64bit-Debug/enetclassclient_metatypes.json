@@ -1,0 +1,1304 @@
+[
+    {
+        "classes": [
+            {
+                "className": "VlcAudio",
+                "lineNumber": 41,
+                "object": true,
+                "qualifiedClassName": "VlcAudio",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "volume",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "volumeChangedF",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "volume",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "volumeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mute",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "muteChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "volume",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "setVolume",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "track",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "setTrack",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "isConst": true,
+                        "name": "toggleMute",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "channel",
+                                "type": "Vlc::AudioChannel"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "setChannel",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mute",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 7,
+                        "isConst": true,
+                        "name": "setMute",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Audio.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "Vlc",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "LogLevel",
+                        "values": [
+                            "DebugLevel",
+                            "NoticeLevel",
+                            "WarningLevel",
+                            "ErrorLevel",
+                            "DisabledLevel"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "ActionsType",
+                        "values": [
+                            "AudioTrack",
+                            "Subtitles",
+                            "VideoTrack",
+                            "Other"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "AudioChannel",
+                        "values": [
+                            "AudioChannelError",
+                            "Stereo",
+                            "RStereo",
+                            "Left",
+                            "Right",
+                            "Dolbys"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "AudioCodec",
+                        "values": [
+                            "NoAudio",
+                            "MPEG2Audio",
+                            "MP3",
+                            "MPEG4Audio",
+                            "Vorbis",
+                            "Flac"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "AudioOutput",
+                        "values": [
+                            "DefaultAout"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "Deinterlacing",
+                        "values": [
+                            "Disabled",
+                            "Discard",
+                            "Blend",
+                            "Mean",
+                            "Bob",
+                            "Linear",
+                            "X",
+                            "Yadif",
+                            "Yadif2x",
+                            "Phospor",
+                            "IVTC"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "FillMode",
+                        "values": [
+                            "PreserveAspectFit",
+                            "PreserveAspectCrop",
+                            "Stretch"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "Meta",
+                        "values": [
+                            "Title",
+                            "Artist",
+                            "Genre",
+                            "Copyright",
+                            "Album",
+                            "TrackNumber",
+                            "Description",
+                            "Rating",
+                            "Date",
+                            "Setting",
+                            "URL",
+                            "Language",
+                            "NowPlaying",
+                            "Publisher",
+                            "EncodedBy",
+                            "ArtworkURL",
+                            "TrackID"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "Mux",
+                        "values": [
+                            "TS",
+                            "PS",
+                            "MP4",
+                            "OGG",
+                            "AVI"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "PlaybackMode",
+                        "values": [
+                            "DefaultPlayback",
+                            "Loop",
+                            "Repeat"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "Ratio",
+                        "values": [
+                            "Original",
+                            "Ignore",
+                            "R_16_9",
+                            "R_16_10",
+                            "R_185_100",
+                            "R_221_100",
+                            "R_235_100",
+                            "R_239_100",
+                            "R_4_3",
+                            "R_5_4",
+                            "R_5_3",
+                            "R_1_1"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "Scale",
+                        "values": [
+                            "NoScale",
+                            "S_1_05",
+                            "S_1_1",
+                            "S_1_2",
+                            "S_1_3",
+                            "S_1_4",
+                            "S_1_5",
+                            "S_1_6",
+                            "S_1_7",
+                            "S_1_8",
+                            "S_1_9",
+                            "S_2_0"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "State",
+                        "values": [
+                            "Idle",
+                            "Opening",
+                            "Buffering",
+                            "Playing",
+                            "Paused",
+                            "Stopped",
+                            "Ended",
+                            "Error"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "VideoCodec",
+                        "values": [
+                            "NoVideo",
+                            "MPEG2Video",
+                            "MPEG4Video",
+                            "H264",
+                            "Theora"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "VideoOutput",
+                        "values": [
+                            "DirectX",
+                            "Direct3D",
+                            "OpenGL",
+                            "DefaultVout"
+                        ]
+                    }
+                ],
+                "lineNumber": 33,
+                "object": true,
+                "qualifiedClassName": "Vlc",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Enums.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "VlcEqualizer",
+                "lineNumber": 37,
+                "object": true,
+                "qualifiedClassName": "VlcEqualizer",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "presetLoaded",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "uint"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "loadFromPreset",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "amp",
+                                "type": "float"
+                            },
+                            {
+                                "name": "bandIndex",
+                                "type": "uint"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "setAmplificationForBandAt",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "setEnabled",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "value",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "setPreamplification",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Equalizer.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "VlcInstance",
+                "lineNumber": 39,
+                "object": true,
+                "qualifiedClassName": "VlcInstance",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Instance.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "VlcMedia",
+                "lineNumber": 46,
+                "object": true,
+                "qualifiedClassName": "VlcMedia",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "meta",
+                                "type": "Vlc::Meta"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "metaChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "subitem",
+                                "type": "libvlc_media_t*"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "subitemAdded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "duration",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "durationChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "status",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "parsedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "status",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "parsedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "media",
+                                "type": "libvlc_media_t*"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "freed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "state",
+                                "type": "Vlc::State"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "stateChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Media.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "VlcMediaList",
+                "lineNumber": 44,
+                "object": true,
+                "qualifiedClassName": "VlcMediaList",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "item",
+                                "type": "libvlc_media_t*"
+                            },
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "itemAdded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "item",
+                                "type": "libvlc_media_t*"
+                            },
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "willAddItem",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "item",
+                                "type": "libvlc_media_t*"
+                            },
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "itemDeleted",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "item",
+                                "type": "libvlc_media_t*"
+                            },
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "willDeleteItem",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "MediaList.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "VlcMediaListPlayer",
+                "lineNumber": 47,
+                "object": true,
+                "qualifiedClassName": "VlcMediaListPlayer",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "played",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "media",
+                                "type": "VlcMedia*"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "nextItemSet",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "media",
+                                "type": "libvlc_media_t*"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "nextItemSet",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "stopped",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "itemAt",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "next",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "play",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "name": "previous",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "name": "stop",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "MediaListPlayer.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "VlcMediaPlayer",
+                "lineNumber": 51,
+                "object": true,
+                "qualifiedClassName": "VlcMediaPlayer",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "backward",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "buffer",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "buffering",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "buffer",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "buffering",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "end",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "error",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "forward",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "length",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "lengthChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "media",
+                                "type": "libvlc_media_t*"
+                            }
+                        ],
+                        "index": 7,
+                        "name": "mediaChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "name": "nothingSpecial",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 9,
+                        "name": "opening",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "pausable",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 10,
+                        "name": "pausableChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 11,
+                        "name": "paused",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 12,
+                        "name": "playing",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "position",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 13,
+                        "name": "positionChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "seekable",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 14,
+                        "name": "seekableChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "filename",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 15,
+                        "name": "snapshotTaken",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 16,
+                        "name": "stopped",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "time",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 17,
+                        "name": "timeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "title",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 18,
+                        "name": "titleChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "count",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 19,
+                        "name": "vout",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 20,
+                        "name": "stateChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "time",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 21,
+                        "name": "setTime",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "pos",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 22,
+                        "name": "setPosition",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "rate",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 23,
+                        "name": "setPlaybackRate",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 24,
+                        "name": "play",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 25,
+                        "name": "pause",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 26,
+                        "name": "togglePause",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 27,
+                        "name": "resume",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 28,
+                        "name": "stop",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "MediaPlayer.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "VlcTrackModel",
+                "lineNumber": 35,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "count",
+                        "notify": "countChanged",
+                        "read": "count",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "VlcTrackModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "countChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "TrackModel.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "VlcVideo",
+                "lineNumber": 42,
+                "object": true,
+                "qualifiedClassName": "VlcVideo",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Video.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "VlcVideoStream",
+                "lineNumber": 50,
+                "methods": [
+                    {
+                        "access": "private",
+                        "index": 0,
+                        "name": "frameUpdated",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "VlcVideoStream",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    },
+                    {
+                        "access": "public",
+                        "name": "VlcAbstractVideoStream"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "VideoStream.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "EdoyunVideo",
+                "lineNumber": 15,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "getCurTime",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "name": "getMaxTime",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "name": "play",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 9,
+                        "name": "pause",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 10,
+                        "name": "stop",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "autoplay",
+                        "notify": "autoplayChanged",
+                        "read": "autoplay",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAutoplay"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "volume",
+                        "notify": "volumeChanged",
+                        "read": "volume",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setVolume"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "position",
+                        "notify": "positionChanged",
+                        "read": "position",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "write": "setPosition"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "url",
+                        "notify": "urlChanged",
+                        "read": "url",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QUrl",
+                        "user": false,
+                        "write": "setUrl"
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "status",
+                        "read": "status",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "seekable",
+                        "notify": "seekableChanged",
+                        "read": "seekable",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "EdoyunVideo",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "volumeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "positionChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "urlChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "seekableChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "autoplayChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "frameDone",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    },
+                    {
+                        "access": "public",
+                        "name": "VlcVideoMemoryStream"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "edoyunvideo.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "ENetwork",
+                "lineNumber": 6,
+                "object": true,
+                "qualifiedClassName": "ENetwork",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "enetwork.h",
+        "outputRevision": 69
+    }
+]

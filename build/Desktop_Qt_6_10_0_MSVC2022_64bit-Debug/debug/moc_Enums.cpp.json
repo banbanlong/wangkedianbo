@@ -1,0 +1,227 @@
+{
+    "classes": [
+        {
+            "className": "Vlc",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "LogLevel",
+                    "values": [
+                        "DebugLevel",
+                        "NoticeLevel",
+                        "WarningLevel",
+                        "ErrorLevel",
+                        "DisabledLevel"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "ActionsType",
+                    "values": [
+                        "AudioTrack",
+                        "Subtitles",
+                        "VideoTrack",
+                        "Other"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "AudioChannel",
+                    "values": [
+                        "AudioChannelError",
+                        "Stereo",
+                        "RStereo",
+                        "Left",
+                        "Right",
+                        "Dolbys"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "AudioCodec",
+                    "values": [
+                        "NoAudio",
+                        "MPEG2Audio",
+                        "MP3",
+                        "MPEG4Audio",
+                        "Vorbis",
+                        "Flac"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "AudioOutput",
+                    "values": [
+                        "DefaultAout"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "Deinterlacing",
+                    "values": [
+                        "Disabled",
+                        "Discard",
+                        "Blend",
+                        "Mean",
+                        "Bob",
+                        "Linear",
+                        "X",
+                        "Yadif",
+                        "Yadif2x",
+                        "Phospor",
+                        "IVTC"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "FillMode",
+                    "values": [
+                        "PreserveAspectFit",
+                        "PreserveAspectCrop",
+                        "Stretch"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "Meta",
+                    "values": [
+                        "Title",
+                        "Artist",
+                        "Genre",
+                        "Copyright",
+                        "Album",
+                        "TrackNumber",
+                        "Description",
+                        "Rating",
+                        "Date",
+                        "Setting",
+                        "URL",
+                        "Language",
+                        "NowPlaying",
+                        "Publisher",
+                        "EncodedBy",
+                        "ArtworkURL",
+                        "TrackID"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "Mux",
+                    "values": [
+                        "TS",
+                        "PS",
+                        "MP4",
+                        "OGG",
+                        "AVI"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "PlaybackMode",
+                    "values": [
+                        "DefaultPlayback",
+                        "Loop",
+                        "Repeat"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "Ratio",
+                    "values": [
+                        "Original",
+                        "Ignore",
+                        "R_16_9",
+                        "R_16_10",
+                        "R_185_100",
+                        "R_221_100",
+                        "R_235_100",
+                        "R_239_100",
+                        "R_4_3",
+                        "R_5_4",
+                        "R_5_3",
+                        "R_1_1"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "Scale",
+                    "values": [
+                        "NoScale",
+                        "S_1_05",
+                        "S_1_1",
+                        "S_1_2",
+                        "S_1_3",
+                        "S_1_4",
+                        "S_1_5",
+                        "S_1_6",
+                        "S_1_7",
+                        "S_1_8",
+                        "S_1_9",
+                        "S_2_0"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "State",
+                    "values": [
+                        "Idle",
+                        "Opening",
+                        "Buffering",
+                        "Playing",
+                        "Paused",
+                        "Stopped",
+                        "Ended",
+                        "Error"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "VideoCodec",
+                    "values": [
+                        "NoVideo",
+                        "MPEG2Video",
+                        "MPEG4Video",
+                        "H264",
+                        "Theora"
+                    ]
+                },
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "VideoOutput",
+                    "values": [
+                        "DirectX",
+                        "Direct3D",
+                        "OpenGL",
+                        "DefaultVout"
+                    ]
+                }
+            ],
+            "lineNumber": 33,
+            "object": true,
+            "qualifiedClassName": "Vlc",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "Enums.h",
+    "outputRevision": 69
+}

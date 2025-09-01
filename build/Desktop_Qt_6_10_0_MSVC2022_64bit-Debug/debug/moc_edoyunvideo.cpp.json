@@ -1,0 +1,187 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                }
+            ],
+            "className": "EdoyunVideo",
+            "lineNumber": 15,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 6,
+                    "name": "getCurTime",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "name": "getMaxTime",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 8,
+                    "name": "play",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 9,
+                    "name": "pause",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 10,
+                    "name": "stop",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "autoplay",
+                    "notify": "autoplayChanged",
+                    "read": "autoplay",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setAutoplay"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "volume",
+                    "notify": "volumeChanged",
+                    "read": "volume",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "write": "setVolume"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "position",
+                    "notify": "positionChanged",
+                    "read": "position",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "qreal",
+                    "user": false,
+                    "write": "setPosition"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "url",
+                    "notify": "urlChanged",
+                    "read": "url",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QUrl",
+                    "user": false,
+                    "write": "setUrl"
+                },
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "status",
+                    "read": "status",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "name": "seekable",
+                    "notify": "seekableChanged",
+                    "read": "seekable",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "EdoyunVideo",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "volumeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "positionChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "urlChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "seekableChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "autoplayChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "frameDone",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickItem"
+                },
+                {
+                    "access": "public",
+                    "name": "VlcVideoMemoryStream"
+                }
+            ]
+        }
+    ],
+    "inputFile": "edoyunvideo.h",
+    "outputRevision": 69
+}

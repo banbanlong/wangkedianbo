@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "VlcVideo",
+            "lineNumber": 42,
+            "object": true,
+            "qualifiedClassName": "VlcVideo",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "Video.h",
+    "outputRevision": 69
+}
