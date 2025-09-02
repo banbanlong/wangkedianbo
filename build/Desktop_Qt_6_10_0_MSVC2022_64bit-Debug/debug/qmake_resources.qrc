@@ -8,5 +8,6 @@
 <file alias="ETitlebar.qml">C:/Users/banchenglong/Desktop/qt/ENetClassClient/ETitlebar.qml</file>
 <file alias="EHandset.qml">C:/Users/banchenglong/Desktop/qt/ENetClassClient/EHandset.qml</file>
 <file alias="ELessionList.qml">C:/Users/banchenglong/Desktop/qt/ENetClassClient/ELessionList.qml</file>
+<file alias="ESqlite3.qml">C:/Users/banchenglong/Desktop/qt/ENetClassClient/ESqlite3.qml</file>
 </qresource>
 </RCC>

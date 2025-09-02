@@ -13,6 +13,41 @@ Module {
         prototype: "QQuickItem"
         exports: ["Edoyun/ENetwork 1.0"]
         exportMetaObjectRevisions: [256]
+        Property {
+            name: "host"
+            type: "QString"
+            read: "host"
+            write: "setHost"
+            notify: "hostChanged"
+            index: 0
+        }
+        Property {
+            name: "port"
+            type: "int"
+            read: "port"
+            write: "setPort"
+            notify: "portChanged"
+            index: 1
+        }
+        Signal {
+            name: "receive"
+            Parameter { name: "cmd"; type: "int" }
+            Parameter { name: "data"; type: "QJsonObject" }
+        }
+        Signal {
+            name: "error"
+            Parameter { name: "err"; type: "int" }
+        }
+        Signal { name: "hostChanged" }
+        Signal { name: "portChanged" }
+        Signal { name: "connected" }
+        Method { name: "onReadyRead" }
+        Method { name: "start" }
+        Method {
+            name: "send"
+            Parameter { name: "cmd"; type: "int" }
+            Parameter { name: "data"; type: "QJsonObject" }
+        }
     }
     Component {
         file: "edoyunvideo.h"

@@ -8,10 +8,21 @@ Window {
     width: 1500  //Screen {width/height desktopAvailableWidth/Height}
     height: 800
     flags: Qt.FramelessWindowHint|Qt.Window
-    visible: true
+    visible: false
     signal relogin()
     signal updateUserInfo()
     signal closeWnd()
+
+    function onUpdateList(lessions)
+    {
+        console.log("lessions="+lessions)
+        if(lessions.length>0){
+            lessionList.listModel.clear()
+            for(var i=0;i<lessions.length;i++){
+                lessionList.listModel.insert(i, lessions[i])
+            }
+        }
+    }
 
     Rectangle{
         anchors.fill: parent
@@ -83,7 +94,7 @@ Window {
                 anchors.fill: parent
                 autoplay: true
                 //url:"http://vfx.mtime.cn/Video/2021/07/09/mp4/210709172715355157.mp4"
-                url:"file:///C:/Users/banchenglong/Desktop/keyan/data/huang_move.mp4"
+                url:"file:///E:/Project/CxxProject/EdoyunPlayer/Win通用安装教程.mp4"
             }
         }
 
