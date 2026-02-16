@@ -56,39 +56,9 @@ Rectangle {//作业：抽屉模式  倍速 设置页面
         model: ListModel{
             id: lessionModel
             ListElement{
-                time:"00:02:16"
-                title:"huang_move"
-                url:"file:///C:/Users/banchenglong/Desktop/keyan/data/huang_move.mp4"
-            }
-            ListElement{
-                time:"00:00:30"
-                title:"dongtaiMP4"
-                url: "file:///C:/Users/banchenglong/Desktop/keyan/data/dongtai.mp4"
-            }
-            ListElement{
-                time:"00:01:40"
-                title:"03 同步信号 m3u8格式"
-                url:"http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8"
-            }
-            ListElement{
-                time:"00:00:05"
-                title:"04 big buck bunny flv格式"
-                url:"https://sample-videos.com/video123/flv/720/big_buck_bunny_720p_1mb.flv"
-            }
-            ListElement{
-                time:"00:30:01"
-                title:"05 同步信号 m3u8格式"
-                url:"http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8"
-            }
-            ListElement{
-                time:"01:38:20"
-                title:"06 电影INBRED m3u8格式"
-                url:"https://qq.sd-play.com/20220310/jMEPNAwK/index.m3u8"
-            }
-            ListElement{
-                time:"00:03:25"
-                title:"07 将进酒（自定义服务器测试） m3u8格式"
-                url:"http://127.0.0.1:8080/jjj.m3u8"
+                time:"00:00:00"
+                title:"请登录获取节目"
+                url:"www.edoyun.com"
             }
         }
         delegate: Rectangle {

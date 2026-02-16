@@ -13,6 +13,7 @@ INCLUDEPATH += $$PWD/
 INCLUDEPATH += $$PWD/openssl/include
 
 SOURCES += \
+        algorithm.cpp \
         core/AbstractVideoFrame.cpp \
         core/AbstractVideoStream.cpp \
         core/Audio.cpp \
@@ -48,7 +49,9 @@ QML_SOURCES = main.qml \
         EPlayerWindow.qml \
         ETitlebar.qml \
         EHandset.qml \
-        ELessionList.qml
+        ELessionList.qml \
+        ESqlite3.qml
+
 
 # 后续的qml文件，需要手动添加到此处！！！
 resources.files = $${QML_SOURCES}

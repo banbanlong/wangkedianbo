@@ -1287,9 +1287,121 @@
                     }
                 ],
                 "className": "ENetwork",
-                "lineNumber": 6,
+                "lineNumber": 9,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "start",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "cmd",
+                                "type": "int"
+                            },
+                            {
+                                "name": "data",
+                                "type": "QJsonObject"
+                            }
+                        ],
+                        "index": 7,
+                        "name": "send",
+                        "returnType": "void"
+                    }
+                ],
                 "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "host",
+                        "notify": "hostChanged",
+                        "read": "host",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setHost"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "port",
+                        "notify": "portChanged",
+                        "read": "port",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setPort"
+                    }
+                ],
                 "qualifiedClassName": "ENetwork",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "cmd",
+                                "type": "int"
+                            },
+                            {
+                                "name": "data",
+                                "type": "QJsonObject"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "receive",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "err",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "error",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "hostChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "portChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "name": "connected",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "onReadyRead",
+                        "returnType": "void"
+                    }
+                ],
                 "superClasses": [
                     {
                         "access": "public",
